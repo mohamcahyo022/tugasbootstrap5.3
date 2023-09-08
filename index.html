@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <video autoplay="autoplay" loop="loop"><source src="bg.mp4" type="video/mp4"></video>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="test.html"><b><i class="bi bi-pen"></i> PENA_SENJA</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contact me</a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary btn-sm dropdown-toggle appbtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Bahasa
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Indonesia</a></li>
+            <li><a class="dropdown-item" href="#">Inggris</a></li>
+            <li><a class="dropdown-item" href="#">Sansakerta</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- section -->
+    <div id="carouselExampleCaptions" class="carousel slide pb-5">
+      <div class="carousel-indicators">
+			<button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleCaptions" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions" type="button"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-caption d-sm-block">
+            <h5>senja di ujung cakrawala</h5>
+            <p>Apakah hanya senja yang tahu bagaimana caranya berpamitan dengan indah?</p>
+            <a href=""><button type="submit" class="btn btn-warning text-light mt-4">Lihat Karya</button></a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Menanti di sepenghujung senja</h5>
+            <p>Apakah hanya senja yang tahu bagaimana caranya berpamitan dengan indah?</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Apakah hanya senja yang tahu bagaimana caranya berpamitan dengan indah?</h5>
+            <p>.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+<!-- about -->
+    <section>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" width="140" height="140"  src="sajak-logo.png" alt="">
+    
+            <h2>Sajak</h2>
+            <p>Merupakan sebuah karya sastra berupa tulisan.</p>
+            <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">Lihat</button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasLeftLabel">Tentang Sajak <span class="badge bg-info">sajak</span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                 <!-- start -->
+                 <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Apa yang dimaksud dengan sajak?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Menurut Kamus Besar Bahasa Indonesia (KBBI), sajak adalah bentuk karya sastra yang teratur dan terikat dalam baris-barisnya. Dalam KKBI juga menjelaskan bahwa sajak merupakan gubahan karya sastra yang sangat mendominasi, baik kesepadanan bunyi, kekontrasan, keselarasan bunyi bahasa, maupun kesamaan.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Apa fungsi sajak?
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                      Penggunaan sajak ditujukan untuk menyamakan kata dalam karya sastra, baik di bagian awal, tengah, maupun akhir
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end componen -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <img class="rounded-circle" width="140" height="140"  src="penasenja-logo.jpg" alt="">
+    
+            <h2>Pena Senja</h2>
+            <p>Website ini berisi tentang kumpulan karya sajak dari berbagai kategori.</p>
+            <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Lihat</button>
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Tentang Website Ini</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body small">
+                <!-- isi -->
+                <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+                  <a class="navbar-brand" href="#"><h6>PENA_SENJA <span class="badge bg-success">About</span></h6></a>
+                  <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#scrollspyHeading1">Apa</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#scrollspyHeading2">Untuk Apa</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+                  <h4 id="scrollspyHeading1">Apa sih?</h4>
+                  <p>Merupakan Sebuah website ini berisi tentang kumpulan karya sajak dari berbagai kategori.</p>
+                  <h4 id="scrollspyHeading2">Untuk Apa?</h4>
+                  <p>Untuk menyelesaikan tugas pemrograman web.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <img class="rounded-circle" width="140" height="140"  src="senja-logo.jpg" alt="">
+    
+            <h2>Senja</h2>
+            <p>Senja adalah fenomena langit yang dihasilkan oleh difusi sinar matahari.</p>
+            <button class="btn btn-warning btm-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Lihat</button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Tentang Senja <span class="badge bg-warning">senja</span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <!-- start -->
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Apa yang dimaksud dengan istilah senja?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Dalam bahasa Indonesia, senja adalah fenomena ketika matahari terbenam. Sementara itu, dalam bahasa Inggris, senja populer disebut twilight. Merriam Webster menjelaskan twilight atau senja adalah fenomena langit yang dihasilkan oleh difusi sinar matahari melalui atmosfer dan debunya.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Senja terjadi karena apa?
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Fenomena ini terjadi karena matahari mulai bergerak di bawah cakrawala dan sinarnya harus menembus lapisan atmosfer yang lebih tebal, menyebabkan penyebaran cahaya dan warna yang berbeda. Senja memberikan pandangan yang indah dan dramatis, menampilkan panorama langit yang menakjubkan.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Apa itu senja dan sunset?
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Matahari terbenam terkenal dengan sebutan sunset. Momen ini juga kerap disebut dengan senja. Ketika momen sunset terjadi, suasana indah tercipta dari secercah cahaya matahari yang mulai meredup. Keindahan tersebut makin telihat ketika terpantul oleh air laut dan menimbulkan kesan kehangatan.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end componen -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 290" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,58L360,232L720,58L1080,145L1440,145L1800,29L2160,87L2520,203L2880,261L3240,261L3600,0L3960,174L4320,145L4680,29L5040,116L5400,29L5760,174L6120,58L6480,145L6840,116L7200,145L7560,116L7920,174L8280,87L8640,145L8640,290L8280,290L7920,290L7560,290L7200,290L6840,290L6480,290L6120,290L5760,290L5400,290L5040,290L4680,290L4320,290L3960,290L3600,290L3240,290L2880,290L2520,290L2160,290L1800,290L1440,290L1080,290L720,290L360,290L0,290Z"></path></svg>
+
+<!-- blog -->
+<section id="blog">
+  <div class="container text-center">
+    <h3 class="mb-4 text-light">SAJAK SENJA</h3>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bila Bertanya Pada Bulan</h5>
+            <p class="card-text fs-6"><small>Adakah musim sedang berganti? Adakah angin berubah arah? Mengapa mendung makin menggelap?</small></p>
+          </div>
+          <div class="card-footer">
+            <!-- Button trigger modal -->
+          <button type="button" class="btn btn-sm btn-warning text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Baca Sekarang
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Bila Bertanya Pada Bulan</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Adakah musim sedang berganti? Adakah angin berubah arah? Mengapa mendung makin menggelap?Mungkinkah hujan mendadak turun tanpa gejala awal?
+
+                  Lalu …
+
+                  aku duduk di sini, di sudut kampung ini, menanti Sang Bulan memberi jawab. Entahlah akan ada kepastian atau kemungkinan, atau alasan pengalihan fokus.
+
+                  Sang Bulan…
+
+                  Kau keliru, kau lupa pada sikap dan sifat alamiah yang sudah Sang Khalik takdirkan.
+
+                  Musim datang pada masa edarnya, angin berhembus dari sumbernya ke arah perginya, ia berputar tanpa kepura-puraan karena insan menghadang jalannya, mendung tak berkelit manakala ia sudah menggumpal ia mesti menggelap agar kamu merasa sejuk ketika ia jujur kamu tak sejujurnya dalam hidup komunitas, dan hujan akan datang mengguyur kota, kampung, hutan, padang berumput atau hingga batuan cadas sekalipun. Semuanya berada dalam garis edar kodrat ilahiah.
+
+                  Aku duduk menikmati teh senja ini, menoleh sambil berefleksi pada ritme tugas alamiah alam ini. Sementara aku sendiri tidak dapat memenuhi irama karya bertekun.
+                  <br>
+                  <i>Umi Nii Baki-Koro’oto, 11 Oktober 2022.</i>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Remah Senja</h5>
+            <p class="card-text"><small>Rerantingan kering patah, rerumputan kering menyembulkan bunga api. Dedaunan kering bernyanyi di bawah injakan tapak.</small></p>
+          </div>
+          <div class="card-footer">
+            <!-- Button trigger modal -->
+          <button type="button" class="btn btn-sm btn-warning text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+            Baca Sekarang
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Awan</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Rerantingan kering patah, rerumputan kering menyembulkan bunga api. Dedaunan kering bernyanyi di bawah injakan tapak. Bebungaan tersenyum manakala senja tiba, mereka segera melipat makhota menunduk hormat pada Sang Khalik. Aku duduk di sudut keremangan senja jadi saksi sambil memilih remah-remah senja ini. 
+                  <br>
+                  <i>Umi Nii Baki, 24 Juli 2022 herobani68@gmail.com</i>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Duka dan Cuaca Benda</h5>
+            <p class="card-text"><small>kabar-kabar duka sedang menggema,
+              air mata tak dapat ditahan-tahan
+              kenangan pada sang jasa telah berjasad
+              tinggallah di sini tapak berkisah</small></p>
+          </div>
+          <div class="card-footer">
+            <!-- Button trigger modal -->
+          <button type="button" class="btn btn-sm btn-warning text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+            Baca Sekarang
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Duka dan Cuaca Benda</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  kabar-kabar duka sedang menggema,
+                  air mata tak dapat ditahan-tahan
+                  kenangan pada sang jasa telah berjasad
+                  tinggallah di sini tapak berkisah
+                  bersama para petinggi dan pinggiran
+                  separuh tiang bendera digerek
+                  hanya pada mereka yang melek jasa
+                  terasa lain pada bangsa besar ini
+                  karena bencana bagai mendekat
+                  ketika cuaca dan iklim bukan pada waktunya
+                  aku duduk ketika senja tiba
+                  berefleksi pada tugas di liburan sekolah
+                  <br>
+                  <i>Umi Nii Baki, 2 Juli 2022 <br>
+                    herobani68@gmail.com</i>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Labil Diantara Suka dan Duka</h5>
+            <p class="card-text">Pagi hari tiba, angin sepoi menyentuh wajah, memberi nuansa segar. Burung berkicau, ayam berkokok, semuanya memuji Tuhan.</p>
+          </div>
+          <div class="card-footer">
+            <!-- Button trigger modal -->
+          <button type="button" class="btn btn-sm btn-warning text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+            Baca Sekarang
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Awan</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Aku menadahkan tangan pada Khalik Ilahi.
+
+                  Puji pada Tuhan memekarkan rasa hati, namun berubah dalam sekejab manakala kabar baru tiba. Seseorang di antara kami pergi untuk selamanya. Selamanya.
+
+                  Aku siapkan diri menata rasa antara suka dan duka. Sukacita pada prosesi peminangan “palsu”, berlanjut peminangan orisinil dalam dua pasangan berbeda.
+
+                  Duka itu melukai hati.
+
+                  Senja tiba, saat prosesi peminangan orisinil tiba.
+
+                  Aku duduk memandang jauh ke angkasa, berharap bersua inspirasi. Aku temukan justru kabar duka yang tiba.
+
+                  Kini…
+
+                  Antara suka dan duka, akan kulunasi rasa ini pada keduanya.
+
+                  Senja…
+
+                  Bawalah cerita ini pada malam, biarkan bintang dan bulan tiba bersamaku dalam dua suasana ini sekaligus.
+                  <br>Umi Nii Baki-Koro’oto, 12 Oktober 2022</i>                                                                                                                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <nav aria-label="Page navigation example" class="mx-auto">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>
+<svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 290" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,87L360,0L720,145L1080,174L1440,29L1800,116L2160,116L2520,29L2880,0L3240,0L3600,145L3960,232L4320,174L4680,261L5040,58L5400,145L5760,261L6120,29L6480,203L6840,0L7200,145L7560,116L7920,116L8280,87L8640,116L8640,290L8280,290L7920,290L7560,290L7200,290L6840,290L6480,290L6120,290L5760,290L5400,290L5040,290L4680,290L4320,290L3960,290L3600,290L3240,290L2880,290L2520,290L2160,290L1800,290L1440,290L1080,290L720,290L360,290L0,290Z"></path></svg>
+<!-- kontak saya -->
+<section id="kontak" class="mt-5">
+  <div class="container">
+    <h4 class="text-center mb-5">KIRIM PESAN</h4>
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <form>
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="nama">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="floatingTextarea2" class="form-label">Comments</label>
+            <textarea class="form-control" placeholder="Tulis Pesan Anda ...." id="floatingTextarea2" style="height: 100px"></textarea>
+          </div>
+          <div class="text-end"> 
+            <button type="submit" class="btn btn-primary"><i class="bi bi-send"></i> Kirim</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer -->
+<svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 240" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,48L40,60C80,72,160,96,240,92C320,88,400,56,480,52C560,48,640,72,720,92C800,112,880,128,960,136C1040,144,1120,144,1200,152C1280,160,1360,176,1440,164C1520,152,1600,112,1680,112C1760,112,1840,152,1920,144C2000,136,2080,80,2160,72C2240,64,2320,104,2400,124C2480,144,2560,144,2640,124C2720,104,2800,64,2880,44C2960,24,3040,24,3120,48C3200,72,3280,120,3360,116C3440,112,3520,56,3600,28C3680,0,3760,0,3840,16C3920,32,4000,64,4080,68C4160,72,4240,48,4320,60C4400,72,4480,120,4560,116C4640,112,4720,56,4800,44C4880,32,4960,64,5040,72C5120,80,5200,64,5280,72C5360,80,5440,112,5520,124C5600,136,5680,128,5720,124L5760,120L5760,240L5720,240C5680,240,5600,240,5520,240C5440,240,5360,240,5280,240C5200,240,5120,240,5040,240C4960,240,4880,240,4800,240C4720,240,4640,240,4560,240C4480,240,4400,240,4320,240C4240,240,4160,240,4080,240C4000,240,3920,240,3840,240C3760,240,3680,240,3600,240C3520,240,3440,240,3360,240C3280,240,3200,240,3120,240C3040,240,2960,240,2880,240C2800,240,2720,240,2640,240C2560,240,2480,240,2400,240C2320,240,2240,240,2160,240C2080,240,2000,240,1920,240C1840,240,1760,240,1680,240C1600,240,1520,240,1440,240C1360,240,1280,240,1200,240C1120,240,1040,240,960,240C880,240,800,240,720,240C640,240,560,240,480,240C400,240,320,240,240,240C160,240,80,240,40,240L0,240Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,0L40,36C80,72,160,144,240,172C320,200,400,184,480,164C560,144,640,120,720,108C800,96,880,96,960,104C1040,112,1120,128,1200,144C1280,160,1360,176,1440,188C1520,200,1600,208,1680,208C1760,208,1840,200,1920,180C2000,160,2080,128,2160,116C2240,104,2320,112,2400,100C2480,88,2560,56,2640,60C2720,64,2800,104,2880,132C2960,160,3040,176,3120,168C3200,160,3280,128,3360,116C3440,104,3520,112,3600,116C3680,120,3760,120,3840,116C3920,112,4000,104,4080,120C4160,136,4240,176,4320,164C4400,152,4480,88,4560,68C4640,48,4720,72,4800,72C4880,72,4960,48,5040,60C5120,72,5200,120,5280,120C5360,120,5440,72,5520,52C5600,32,5680,40,5720,44L5760,48L5760,240L5720,240C5680,240,5600,240,5520,240C5440,240,5360,240,5280,240C5200,240,5120,240,5040,240C4960,240,4880,240,4800,240C4720,240,4640,240,4560,240C4480,240,4400,240,4320,240C4240,240,4160,240,4080,240C4000,240,3920,240,3840,240C3760,240,3680,240,3600,240C3520,240,3440,240,3360,240C3280,240,3200,240,3120,240C3040,240,2960,240,2880,240C2800,240,2720,240,2640,240C2560,240,2480,240,2400,240C2320,240,2240,240,2160,240C2080,240,2000,240,1920,240C1840,240,1760,240,1680,240C1600,240,1520,240,1440,240C1360,240,1280,240,1200,240C1120,240,1040,240,960,240C880,240,800,240,720,240C640,240,560,240,480,240C400,240,320,240,240,240C160,240,80,240,40,240L0,240Z"></path><defs><linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,48L40,72C80,96,160,144,240,164C320,184,400,176,480,168C560,160,640,152,720,152C800,152,880,160,960,160C1040,160,1120,152,1200,148C1280,144,1360,144,1440,156C1520,168,1600,192,1680,192C1760,192,1840,168,1920,148C2000,128,2080,112,2160,116C2240,120,2320,144,2400,140C2480,136,2560,104,2640,96C2720,88,2800,104,2880,116C2960,128,3040,136,3120,140C3200,144,3280,144,3360,124C3440,104,3520,64,3600,68C3680,72,3760,120,3840,120C3920,120,4000,72,4080,72C4160,72,4240,120,4320,116C4400,112,4480,56,4560,64C4640,72,4720,144,4800,168C4880,192,4960,168,5040,164C5120,160,5200,176,5280,188C5360,200,5440,208,5520,196C5600,184,5680,152,5720,136L5760,120L5760,240L5720,240C5680,240,5600,240,5520,240C5440,240,5360,240,5280,240C5200,240,5120,240,5040,240C4960,240,4880,240,4800,240C4720,240,4640,240,4560,240C4480,240,4400,240,4320,240C4240,240,4160,240,4080,240C4000,240,3920,240,3840,240C3760,240,3680,240,3600,240C3520,240,3440,240,3360,240C3280,240,3200,240,3120,240C3040,240,2960,240,2880,240C2800,240,2720,240,2640,240C2560,240,2480,240,2400,240C2320,240,2240,240,2160,240C2080,240,2000,240,1920,240C1840,240,1760,240,1680,240C1600,240,1520,240,1440,240C1360,240,1280,240,1200,240C1120,240,1040,240,960,240C880,240,800,240,720,240C640,240,560,240,480,240C400,240,320,240,240,240C160,240,80,240,40,240L0,240Z"></path></svg>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top bg-dark-subtle">
+    <div class="col-md-4 d-flex align-items-center ms-4">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <b><i class="bi bi-pen"> PENA_SENJA</i></b>
+      </a>
+    </div>
+    <small><span class="text-center">&copy; 2023 Pena Senja</span></small>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-5">
+      <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-instagram"></i></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook"></i></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-youtube"></i></a></li>
+    </ul>
+  </footer>
+  </body>
+</html>
